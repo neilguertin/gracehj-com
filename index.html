@@ -9,7 +9,7 @@ permalink: /
         <!-- Masthead Avatar Image-->
         <img class="masthead-avatar mb-5" src="/assets/images/avataaars.svg" alt="..." />
         <!-- Masthead Heading-->
-        <h1 class="masthead-heading text-uppercase mb-0">Start Bootstrap</h1>
+        <h1 class="masthead-heading text-uppercase mb-0">Grace Hendrickson-Jones</h1>
         {% include icon_divider.html light=true %}
         <!-- Masthead Subheading-->
         <p class="masthead-subheading font-weight-light mb-0">Graphic Artist - Web Designer - Illustrator</p>
@@ -19,15 +19,15 @@ permalink: /
 <!-- Portfolio Section-->
 {% capture portfolio_content %}
 <div class="portfolio row justify-content-center">
-    {% include portfolio_item.html imgsrc="/assets/images/portfolio/cabin.png" text="Item 1" %}
-    {% include portfolio_item.html imgsrc="/assets/images/portfolio/cake.png" text="Item 2" %}
-    {% include portfolio_item.html imgsrc="/assets/images/portfolio/circus.png" text="Item 3" %}
-    {% include portfolio_item.html imgsrc="/assets/images/portfolio/game.png" text="Item 4" %}
-    {% include portfolio_item.html imgsrc="/assets/images/portfolio/safe.png" text="Item 5" %}
-    {% include portfolio_item.html imgsrc="/assets/images/portfolio/submarine.png" text="Item 6" %}
+    {% include portfolio_item.html imgsrc="/assets/images/portfolio/cabin.png" text="About" ahref="#about" %}
+    {% include portfolio_item.html imgsrc="/assets/images/portfolio/cake.png" text="Flute" ahref="#flute" %}
+    {% include portfolio_item.html imgsrc="/assets/images/portfolio/circus.png" text="Calling" ahref="#calling" %}
+    {% include portfolio_item.html imgsrc="/assets/images/portfolio/game.png" text="Teaching" ahref="#teaching" %}
+    {% include portfolio_item.html imgsrc="/assets/images/portfolio/safe.png" text="Calendar" ahref="#calendar" %}
+    {% include portfolio_item.html imgsrc="/assets/images/portfolio/submarine.png" text="Contact" ahref="#contact" %}
 </div>
 {% endcapture %}
-{% include section.html id="portfolio" title="Portfolio" content=portfolio_content %}
+{% include section.html id="portfolio" content=portfolio_content %}
 
 <!-- About Section-->
 {% capture about_content %}
@@ -43,6 +43,26 @@ permalink: /
         </div>
 {% endcapture %}
 {% include section.html color=true id="about" title="About" content=about_content %}
+
+<!-- Flute Section-->
+{% capture flute_content %}
+{% endcapture %}
+{% include section.html id="flute" title="Flute" content=flute_content %}
+
+<!-- Calling Section-->
+{% capture calling_content %}
+{% endcapture %}
+{% include section.html color=true id="calling" title="Calling" content=calling_content %}
+
+<!-- Teaching Section-->
+{% capture teaching_content %}
+{% endcapture %}
+{% include section.html id="teaching" title="Teaching" content=teaching_content %}
+
+<!-- Calendar Section-->
+{% capture calendar_content %}
+{% endcapture %}
+{% include section.html color=true id="calendar" title="Calendar" content=calendar_content %}
 
 <!-- Contact Section-->
 {% capture contact_content %}
