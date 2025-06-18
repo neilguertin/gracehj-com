@@ -1,9 +1,15 @@
 ul.calendar {
     list-style-type: none;
 }
+
 a.link-on-bg {
   color: var(--bs-highlight-bg);
 }
 a.link-on-bg:hover {
   color: var(--bs-link-hover-color);
+}
+
+.youtube-embed {
+    width: 100%;
+    aspect-ratio: 16/9;
 }
