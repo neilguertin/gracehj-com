@@ -1,0 +1,11 @@
+<section class="page-section {% if include.color %}bg-primary text-white{% endif %}" id={{include.id}}>
+    <div class="container">
+        <h2 class="page-section-heading text-center text-uppercase {% if include.color %}text-white{% else %}text-secondary{% endif %}">{{include.title}}</h2>
+        {% if include.color %}
+        {% include icon_divider.html light=true %}
+        {% else %}
+        {% include icon_divider.html %}
+        {% endif %}
+        {{ include.content }}
+    </div>
+</section>
