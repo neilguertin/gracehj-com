@@ -12,4 +12,10 @@ a.link-on-bg:hover {
 .youtube-embed {
     width: 100%;
     aspect-ratio: 16/9;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+  font-size: 3rem;
 }
