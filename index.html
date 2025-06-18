@@ -84,6 +84,8 @@ permalink: /
     }
     document.addEventListener('DOMContentLoaded', hidePastEvents);
 </script>
+<div class="row justify-content-center">
+    <div class="col-lg-8 col-xl-7">
 <p class="lead text-center mb-5">Find me at these upcoming events</p>
 <ul class="calendar">
     {% for item in site.data.calendar %}
@@ -95,14 +97,35 @@ permalink: /
     </li>
     {% endfor %}
 </ul>
+    </div>
+</div>
 {% endcapture %}
 {% include section.html color=true id="calendar" title="Calendar" content=calendar_content %}
 
 <!-- Contact Section-->
 {% capture contact_content %}
-        <div class="row justify-content-center">
-            <div class="col-lg-8 col-xl-7">
-            </div>
-        </div>
+<script>
+    function showEmail() {
+        span = document.getElementById("contact-email");
+        emailtext = "grace"+"."+"hendrickson"+"."+"jones"+"@"+"gmail"+"."+"com";
+        span.innerHTML = "<a href=\"mailto:" + emailtext + "\">" + emailtext + "</a>";
+    }
+    function showSignal() {
+        span = document.getElementById("contact-signal");
+        span.innerHTML = "neil"+"."+"57";
+    }
+</script>
+<div class="row justify-content-center">
+    <div class="col-lg-8 col-xl-7">
+        <p class="lead text-center mb-5">Get in touch with me!</p>
+        <ul class="fa-ul">
+            <li><i class="fa-li fa-brands fa-square-youtube"></i>YouTube: <a href="https://www.youtube.com/@gracehendrickson-jones5765">@gracehendrickson-jones5765</a></li>
+            <li><i class="fa-li fa-brands fa-square-instagram"></i>Instagram: <a href="https://www.instagram.com/_grapeflute/">_grapeflute</a></li>
+            <li><i class="fa-li fa-brands fa-facebook-messenger"></i>Facebook: <a href="https://www.facebook.com/grace.hendricksonjones/">grace.hendricksonjones</a></li>
+            <li><i class="fa-li fa-solid fa-envelope"></i>Email: <span id="contact-email"><button onclick="showEmail()">Click to reveal</button></span></li>
+            <li><i class="fa-li fa-brands fa-signal-messenger"></i>Signal: <span id=contact-signal><button onclick="showSignal()">Click to reveal</button></span></li>
+        </ul>
+    </div>
+</div>
 {% endcapture %}
 {% include section.html id="contact" title="Contact" content=contact_content %}
