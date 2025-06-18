@@ -61,6 +61,40 @@ permalink: /
 
 <!-- Calendar Section-->
 {% capture calendar_content %}
+<script>
+    // Hide past events. This can't be done with Jekyll/Liquid
+    // because the html is generated at build time. The calculation
+    // needs to happen at run time.
+    // Comparison is done with date objects with local timezone.
+    // The time portion of these objects is 0 so only the date is compared
+    function hidePastEvents() {
+        today = new Date();
+        today.setHours(0,0,0,0);
+        all_calendar_items = document.getElementsByClassName('calendar-item');
+        for (const calendar_item of all_calendar_items) {
+            // Have to construct the date like this because
+            // new Date(dance_node.getAttribute('data-date'))
+            // creates it at UTC midnight
+            item_date_str = calendar_item.getAttribute('date-iso-hide-after'); // Like 2024-01-01
+            item_date = new Date(item_date_str.slice(0,4),item_date_str.slice(5,7)-1,item_date_str.slice(8,10));
+            if (item_date < today) {
+                calendar_item.style.display="none";
+            }
+        }
+    }
+    document.addEventListener('DOMContentLoaded', hidePastEvents);
+</script>
+<p class="lead text-center mb-5">Find me at these upcoming events</p>
+<ul class="calendar">
+    {% for item in site.data.calendar %}
+    <li class="calendar-item mb-4" date-iso-hide-after={{item.date-iso-hide-after}}>
+        <div class="h5 mb-0">{{item.title}}</div>
+        <div>{{item.date}}</div>
+        {% if item.location %}<div>{{item.location}}</div>{% endif %}
+        {% if item.link %}<div><a href={{item.link}} class="link-on-bg">More info</a></div>{% endif %}
+    </li>
+    {% endfor %}
+</ul>
 {% endcapture %}
 {% include section.html color=true id="calendar" title="Calendar" content=calendar_content %}
 
