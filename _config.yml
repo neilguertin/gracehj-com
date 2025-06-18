@@ -19,10 +19,16 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Grace Hendrickson-Jones
+tagline: Flute - Contra Dance - Traditional Music
 description: >- # this >- means to ignore newlines
-  Flute player and contra dance caller
+  Grace Hendrickson-Jones is a flute player and contra dance caller from Montreal
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.gracehj.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+social:
+  name: Grace Hendrickson-Jones
+  links:
+    - https://www.youtube.com/@gracehendrickson-jones5765
 
 # Build settings
 plugins:
