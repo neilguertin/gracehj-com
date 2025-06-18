@@ -32,31 +32,27 @@ permalink: /
 
 <!-- About Section-->
 {% capture about_content %}
-        <div class="row">
-            <div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
-            <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
-        </div>
-        <div class="text-center mt-4">
-            <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                <i class="fas fa-download me-2"></i>
-                Free Download!
-            </a>
-        </div>
+<div class="row">
+    <div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
+    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
+</div>
+<div class="text-center mt-4">
+    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
+        <i class="fas fa-download me-2"></i>
+        Free Download!
+    </a>
+</div>
 {% endcapture %}
 {% include section.html color=true id="about" title="About" content=about_content %}
 
 <!-- Music Section-->
 {% capture music_content %}
-<div class="row justify-content-center">
-    <div class="col-lg-8 col-xl-7">
-        <p>I am a professional musician, playing primarily flute but also piano and voice. I have been playing flute since the age of 7 and have a Bachelor of Music in Flute Performance from McGill University.</p>
-        <iframe class="youtube-embed" src="https://www.youtube.com/embed/Qa4CVh9LBP8" title="Toss the Feathers - beatbox flute" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <p>I play for Contra Dances and English Country Dances all over the United States and Canada. Currently I play with Cojiro (<a href="https://www.jessandmarkmusic.com/">Jess Newman and Mark Price</a>), Les Quatre Patates (Jonathan Werk, <a href="https://jacobdgm.com/">Jacob deGroot-Maggetti</a>, and Antonie Beaudet), and Modern Birds (<a href="https://everestwitman.com/">Everest Witman</a> and Jonathan Werk). I play for regular local dances as well as festivals like <a href="https://www.neffa.org/festival-home/">NEFFA</a> and <a href="http://youthdanceweekend.org/">YDW</a>.</p>
-        <iframe class="youtube-embed" src="https://www.youtube.com/embed/U-bifgs35Mk" title="Grace &amp; Cojiro with Bev Bernbaum at NEFFA - April 27th, 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <p>I regularly host traditional music sessions around Montreal. You can often find me at the Monday night Québécois session at La Petite Marche or Sunday afternoon session at La Cale. I also sometimes host sessions at my home!</p>
-        <p>I play flute for the Royal Canadian Air Force as a reservist in the 438 Tactical Helicopter Squadron Band. We rehearse weekly and have several performances each month. I also occasionally deploy to locations around Canada to reinforce other bands or for special performances.</p>
-    </div>
-</div>
+<p>I am a professional musician, playing primarily flute but also piano and voice. I have been playing flute since the age of 7 and have a Bachelor of Music in Flute Performance from McGill University.</p>
+<iframe class="youtube-embed" src="https://www.youtube.com/embed/Qa4CVh9LBP8" title="Toss the Feathers - beatbox flute" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>I play for Contra Dances and English Country Dances all over the United States and Canada. Currently I play with Cojiro (<a href="https://www.jessandmarkmusic.com/">Jess Newman and Mark Price</a>), Les Quatre Patates (Jonathan Werk, <a href="https://jacobdgm.com/">Jacob deGroot-Maggetti</a>, and Antonie Beaudet), and Modern Birds (<a href="https://everestwitman.com/">Everest Witman</a> and Jonathan Werk). I play for regular local dances as well as festivals like <a href="https://www.neffa.org/festival-home/">NEFFA</a> and <a href="http://youthdanceweekend.org/">YDW</a>.</p>
+<iframe class="youtube-embed" src="https://www.youtube.com/embed/U-bifgs35Mk" title="Grace &amp; Cojiro with Bev Bernbaum at NEFFA - April 27th, 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>I regularly host traditional music sessions around Montreal. You can often find me at the Monday night Québécois session at La Petite Marche or Sunday afternoon session at La Cale. I also sometimes host sessions at my home!</p>
+<p>I play flute for the Royal Canadian Air Force as a reservist in the 438 Tactical Helicopter Squadron Band. We rehearse weekly and have several performances each month. I also occasionally deploy to locations around Canada to reinforce other bands or for special performances.</p>
 {% endcapture %}
 {% include section.html id="music" title="Music" content=music_content %}
 
@@ -95,8 +91,6 @@ permalink: /
     }
     document.addEventListener('DOMContentLoaded', hidePastEvents);
 </script>
-<div class="row justify-content-center">
-    <div class="col-lg-8 col-xl-7">
 <p class="lead text-center mb-5">Find me at these upcoming events</p>
 <ul class="calendar">
     {% for item in site.data.calendar %}
@@ -126,17 +120,13 @@ permalink: /
         span.innerHTML = "neil"+"."+"57";
     }
 </script>
-<div class="row justify-content-center">
-    <div class="col-lg-8 col-xl-7">
-        <p class="lead text-center mb-5">Get in touch with me!</p>
-        <ul class="fa-ul">
-            <li><i class="fa-li fa-brands fa-youtube"></i>YouTube: <a href="https://www.youtube.com/@gracehendrickson-jones5765">@gracehendrickson-jones5765</a></li>
-            <li><i class="fa-li fa-brands fa-instagram"></i>Instagram: <a href="https://www.instagram.com/_grapeflute/">_grapeflute</a></li>
-            <li><i class="fa-li fa-brands fa-facebook-messenger"></i>Facebook: <a href="https://www.facebook.com/grace.hendricksonjones/">grace.hendricksonjones</a></li>
-            <li><i class="fa-li fa-solid fa-envelope"></i>Email: <span id="contact-email"><button onclick="showEmail()">Click to reveal</button></span></li>
-            <li><i class="fa-li fa-brands fa-signal-messenger"></i>Signal: <span id=contact-signal><button onclick="showSignal()">Click to reveal</button></span></li>
-        </ul>
-    </div>
-</div>
+<p class="lead text-center mb-5">Get in touch with me!</p>
+<ul class="fa-ul">
+    <li><i class="fa-li fa-brands fa-youtube"></i>YouTube: <a href="https://www.youtube.com/@gracehendrickson-jones5765">@gracehendrickson-jones5765</a></li>
+    <li><i class="fa-li fa-brands fa-instagram"></i>Instagram: <a href="https://www.instagram.com/_grapeflute/">_grapeflute</a></li>
+    <li><i class="fa-li fa-brands fa-facebook-messenger"></i>Facebook: <a href="https://www.facebook.com/grace.hendricksonjones/">grace.hendricksonjones</a></li>
+    <li><i class="fa-li fa-solid fa-envelope"></i>Email: <span id="contact-email"><button onclick="showEmail()">Click to reveal</button></span></li>
+    <li><i class="fa-li fa-brands fa-signal-messenger"></i>Signal: <span id=contact-signal><button onclick="showSignal()">Click to reveal</button></span></li>
+</ul>
 {% endcapture %}
 {% include section.html id="contact" title="Contact" content=contact_content %}
