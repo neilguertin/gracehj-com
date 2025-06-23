@@ -19,3 +19,12 @@ a.link-on-bg:hover {
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
   font-size: 3rem;
 }
+
+.nav-link {
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+}
+.nav-link.active {
+    padding-left: .4rem !important;
+    padding-right: .4rem !important;
+}
