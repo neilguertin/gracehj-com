@@ -28,3 +28,12 @@ a.link-on-bg:hover {
     padding-left: .4rem !important;
     padding-right: .4rem !important;
 }
+
+header {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.masthead-avatar {
+    border-radius: 50%;
+}

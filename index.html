@@ -4,10 +4,10 @@ title: Home
 permalink: /
 ---
 <!-- Masthead-->
-<header class="masthead bg-primary text-white text-center">
+<header style="background-image: url('/assets/images/hero.jpg');" class="masthead bg-primary text-white text-center">
     <div class="container d-flex align-items-center flex-column">
         <!-- Masthead Avatar Image-->
-        <img class="masthead-avatar mb-5" src="/assets/images/avataaars.svg" alt="..." />
+        <img class="masthead-avatar mb-5" src="/assets/images/profile.jpg" alt="..." />
         <!-- Masthead Heading-->
         <h1 class="masthead-heading text-uppercase mb-0">Grace Hendrickson-Jones</h1>
         {% include icon_divider.html light=true %}
@@ -20,12 +20,12 @@ permalink: /
 <!-- Portfolio Section-->
 {% capture portfolio_content %}
 <div class="portfolio row justify-content-center">
-    {% include portfolio_item.html imgsrc="/assets/images/portfolio/cabin.png" text="About" ahref="#about" %}
-    {% include portfolio_item.html imgsrc="/assets/images/portfolio/cake.png" text="Music" ahref="#music" %}
-    {% include portfolio_item.html imgsrc="/assets/images/portfolio/circus.png" text="Calling" ahref="#calling" %}
-    {% include portfolio_item.html imgsrc="/assets/images/portfolio/game.png" text="Teaching" ahref="#teaching" %}
-    {% include portfolio_item.html imgsrc="/assets/images/portfolio/safe.png" text="Calendar" ahref="#calendar" %}
-    {% include portfolio_item.html imgsrc="/assets/images/portfolio/submarine.png" text="Contact" ahref="#contact" %}
+    {% include portfolio_item.html imgsrc="/assets/images/portfolio_about.jpg" text="About" ahref="#about" %}
+    {% include portfolio_item.html imgsrc="/assets/images/portfolio_music.jpg" text="Music" ahref="#music" %}
+    {% include portfolio_item.html imgsrc="/assets/images/portfolio_calling.jpg" text="Calling" ahref="#calling" %}
+    {% include portfolio_item.html imgsrc="/assets/images/portfolio_teaching.jpg" text="Teaching" ahref="#teaching" %}
+    {% include portfolio_item.html imgsrc="/assets/images/portfolio_calendar.jpg" text="Calendar" ahref="#calendar" %}
+    {% include portfolio_item.html imgsrc="/assets/images/portfolio_contact.jpg" text="Contact" ahref="#contact" %}
 </div>
 {% endcapture %}
 {% include section.html id="portfolio" content=portfolio_content %}
@@ -52,7 +52,16 @@ permalink: /
 <p>I play for Contra Dances and English Country Dances all over the United States and Canada. Currently I play with Cojiro (<a href="https://www.jessandmarkmusic.com/">Jess Newman and Mark Price</a>), Les Quatre Patates (Jonathan Werk, <a href="https://jacobdgm.com/">Jacob deGroot-Maggetti</a>, and Antonie Beaudet), and Modern Birds (<a href="https://everestwitman.com/">Everest Witman</a> and Jonathan Werk). I play for regular local dances as well as festivals like <a href="https://www.neffa.org/festival-home/">NEFFA</a> and <a href="http://youthdanceweekend.org/">YDW</a>.</p>
 <iframe class="youtube-embed" src="https://www.youtube.com/embed/U-bifgs35Mk" title="Grace &amp; Cojiro with Bev Bernbaum at NEFFA - April 27th, 2025" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <p>I regularly host traditional music sessions around Montreal. You can often find me at the Monday night Québécois session at La Petite Marche or Sunday afternoon session at La Cale. I also sometimes host sessions at my home!</p>
-<p>I play flute for the Royal Canadian Air Force as a reservist in the 438 Tactical Helicopter Squadron Band. We rehearse weekly and have several performances each month. I also occasionally deploy to locations around Canada to reinforce other bands or for special performances.</p>
+<div class="container p-0">
+    <div class="row">
+        <div class="col-md-4">
+            <img width="100%" src="/assets/images/music_438.jpg">
+        </div>
+        <div class="col-md-8">
+            <p>I play flute for the Royal Canadian Air Force as a reservist in the 438 Tactical Helicopter Squadron Band. We rehearse weekly and have several performances each month. I also occasionally deploy to locations around Canada to reinforce other bands or for special performances.</p>
+        </div>
+    </div>
+</div>
 {% endcapture %}
 {% include section.html id="music" title="Music" content=music_content %}
 
