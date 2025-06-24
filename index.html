@@ -106,7 +106,8 @@ permalink: /
     {% for item in site.data.calendar %}
     <li class="calendar-item mb-4" date-iso-hide-after={{item.date-iso-hide-after}}>
         <div class="h5 mb-0">{{item.title}}</div>
-        <div>{{item.date}}</div>
+        {% if item.description %}<div>{{item.description}}</div>{% endif %}
+        {% if item.date %}<div>{{item.date}}</div>{% endif %}
         {% if item.location %}<div>{{item.location}}</div>{% endif %}
         {% if item.link %}<div><a href={{item.link}} class="link-on-bg">More info</a></div>{% endif %}
     </li>
