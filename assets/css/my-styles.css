@@ -1,3 +1,10 @@
+:root {
+  --bs-primary: #b29f59;
+  --bs-primary-rgb: 178, 159, 89;
+  --bs-primary-rgba: rgba(178, 159, 89, .9);
+  --bs-link-color: var(--bs-primary);
+  --bs-link-hover-color: #477cb2;
+}
 ul.calendar {
     list-style-type: none;
 }
@@ -19,20 +26,45 @@ a.link-on-bg:hover {
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
   font-size: 3rem;
 }
+.portfolio .portfolio-item .portfolio-item-caption {
+  background-color: var(--bs-primary-rgba);
+}
 
 .nav-link {
     padding-top: .2rem;
     padding-bottom: .2rem;
+    margin-left: .3rem !important;
+    margin-right: .3rem !important;
+    color: #fff !important;
+    display: inline-block;
+    transition: padding-left 0s, padding-right 0s, margin-left 0s, margin-right 0s;
 }
 .nav-link.active {
-    padding-left: .4rem !important;
-    padding-right: .4rem !important;
+    padding-left: .3rem !important;
+    padding-right: .3rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    background: var(--bs-primary) !important;
 }
 
 header {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)
+        ),
+        url('/assets/images/hero.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
+    text-shadow: 2px 2px 2px black;
+}
+header h1 {
+    font-size: min(7vw, 3rem) !important;
+}
+.navbar-brand {
+    display: inline-block;
+    font-size: min(4vw, var(--bs-navbar-brand-font-size)) !important;
 }
 .masthead-avatar {
     border-radius: 50%;
