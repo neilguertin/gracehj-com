@@ -5,8 +5,10 @@
         {% seo title=false %}
     </head>
     <body id="page-top">
-        {% include navigation.html %}
-        {{ content }}
-        {% include footer.html %}
+        <div class="flex-wrapper">
+            {% include navigation.html %}
+            {{ content }}
+            {% include footer.html %}
+        </div>
     </body>
 </html>
