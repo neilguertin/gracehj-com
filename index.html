@@ -139,8 +139,8 @@ permalink: /
     <li><i class="fa-li fa-brands fa-youtube"></i>YouTube: <a href="https://www.youtube.com/@gracehendrickson-jones5765">@gracehendrickson-jones5765</a></li>
     <li><i class="fa-li fa-brands fa-instagram"></i>Instagram: <a href="https://www.instagram.com/_grapeflute/">_grapeflute</a></li>
     <li><i class="fa-li fa-brands fa-facebook-messenger"></i>Facebook: <a href="https://www.facebook.com/grace.hendricksonjones/">grace.hendricksonjones</a></li>
-    <li><i class="fa-li fa-solid fa-envelope"></i>Email: <span id="contact-email"><button onclick="showEmail()">Click to reveal</button></span></li>
-    <li><i class="fa-li fa-brands fa-signal-messenger"></i>Signal: <span id=contact-signal><button onclick="showSignal()">Click to reveal</button></span></li>
+    <li><i class="fa-li fa-solid fa-envelope"></i>Email: <span id="contact-email"><a role="button" href="#" onclick="showEmail(); return false;">Click to reveal</a></span></li>
+    <li><i class="fa-li fa-brands fa-signal-messenger"></i>Signal: <span id=contact-signal><a role="button" href="#" onclick="showSignal(); return false;">Click to reveal</a></span></li>
 </ul>
 {% endcapture %}
 {% include section.html id="contact" title="Contact" content=contact_content %}
