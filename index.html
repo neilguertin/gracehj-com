@@ -10,8 +10,8 @@ permalink: /
 
         <h1 class="masthead-heading text-uppercase mb-0">Grace Hendrickson&#8209;Jones</h1>
         {% include icon_divider.html light=true %}
-        <p class="masthead-subheading font-weight-light">Flute - Contra Dance - Traditional Music</p>
-        <p class="masthead-subheading font-weight-light">Montreal, QC</p>
+        <p class="masthead-subheading fw-bold">Flute - Contra Dance - Traditional Music</p>
+        <p class="masthead-subheading fw-bold">Montreal, QC</p>
     </div>
 </header>
 
@@ -31,14 +31,12 @@ permalink: /
 <!-- About Section-->
 {% capture about_content %}
 <div class="row">
-    <div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
-    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
+    <div class="col-lg-6 ms-auto"><p class="lead">I play the flute!</p></div>
+    <div class="col-lg-6 me-auto"><p class="lead">I dance!</p></div>
 </div>
-<div class="text-center mt-4">
-    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-        <i class="fas fa-download me-2"></i>
-        Free Download!
-    </a>
+<div class="row">
+    <div class="col-lg-6 ms-auto"><p class="lead">I like bikes!</p></div>
+    <div class="col-lg-6 me-auto"><p class="lead">I like beans!</p></div>
 </div>
 {% endcapture %}
 {% include section.html color=true id="about" title="About" content=about_content %}
